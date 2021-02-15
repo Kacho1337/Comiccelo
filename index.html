@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<title>კომიქსელო</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" href="icon.ico">
+<style>
+body,h1,h2,h3,h4,h5,h6{font-family: "Raleway", sans-serif}
+@font-face {
+  font-family: fontigeo1;
+  src: url(fonti.ttf);
+}
+@font-face{
+    font-family:fontigeo2;
+    src:url(font2.tff);
+}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.w3-wide{
+    margin-left:50px;
+
+}
+.w3-button{
+    padding-right:30px;
+}
+#news{
+    background-color:#55CBD3;
+    max-width: 1320px;
+    height: 48vh;
+    margin:0 200px 0 300px;
+   
+}
+.foto2{
+    margin-top:110px;
+    margin-left:250px;
+    width: 230px;
+    box-shadow: 5px 5px 20px ;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+.foto2:hover{
+    transform:translateY(-15px);
+}
+.newss{
+    display: flex;
+}
+.newstext{
+    color:rgba(255, 255, 255, 0.897);
+   font-size:18px;
+   margin-left:180px; 
+   width:400px;
+   
+}
+h6{
+    margin-top:110px;
+    margin-left:130px; 
+    font-weight: 600;
+    font-size:25px;
+    color:white;
+    font-family: fontigeo1;
+}
+.komiqselo{
+    font-weight: bold;
+    color:black;
+    font-size:19px;
+    font-family:fontigeo1;
+}
+/* button{
+    margin-top:60px;
+    margin-left:320px;
+    background-color:#F1FAEE;
+    padding:5px 20px 5px 20px;
+    cursor:pointer;
+    transition: ease 0.3s;
+} */
+.button:hover{
+    background-color:#FFB68C ;
+     
+}
+.w3-bar-item{
+    transition: ease 0.3s;
+}
+.w3-right{
+    margin-right: 50px;
+}
+.divs{
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+}
+.divs-sale,.divs-cats,.divs-geo{
+    width:235px;
+    height:110px;
+    background-color: rgb(161, 161, 161);
+    margin-left: 10px;
+    margin-top:40px;
+    margin-left:50px;
+    margin-right: 50px;
+    box-shadow:1px 2px 5px;
+    cursor: pointer;
+    background-color: #f1faee;
+}
+.main2{
+    text-align: center;
+    margin-top:32px;
+    font-size:21px;
+    font-weight: bold;
+    font-family: fontigeo1;
+
+}
+hr {
+  width: 0%;
+  min-width: 20%;
+  max-width: 100%;
+  margin: 30px auto 0 auto;
+  border: none;
+  border-bottom: 1px solid #666;
+  position: relative;
+  transition: box-shadow 200ms ease-in-out;
+  box-shadow: 0px 0px 0px 0px #f9f9f9;
+}
+h5{
+    font-weight: bold;
+    font-size:20px;
+    font-family: fontigeo1;
+}
+.meore{
+    margin:0 auto;
+}
+.divs-yidva{
+    
+    display:grid;
+    grid-template-columns: repeat(6,160px);
+    grid-gap:155px;
+    margin-top:4%;
+    margin-left:12%;
+   
+}
+.imgyidva{
+    box-shadow:1px 2px 5px;
+}
+.yidva{
+    text-align: center;
+    cursor: pointer;
+    transition: ease 0.2s;
+    
+}
+.yidva:hover{
+    transform:translateY(-15px);
+}
+.yidvap{
+    align-items: center;
+    font-size:16px;
+    font-family: fontigeo1;
+}
+.meti{
+    text-decoration: none;
+}
+.linki{
+    text-decoration: none;
+}
+footer{
+    max-width: 100%;
+    background-color: #e0e0e0;
+    font-size:13px;
+}
+.button {
+    background-color: #9e9e9e; 
+    border:none;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin-top:60px;
+    margin-left:420px;
+    background-color:#F1FAEE;
+    padding:10px 25px 10px 25px;
+    cursor:pointer;
+    transition: ease 0.3s;
+}
+/* .america{
+    margin-left:5%;
+} */
+@media(max-width:1557px){
+    footer{
+        display:none;
+    }
+    .divs-yidva{
+        width:20%;
+        grid-gap:110px;
+    }
+    #news{
+        margin:0 10% 0 10%;
+    }
+    .newstext{
+        margin-left:20%;
+        width:70%;
+    }
+    h6{
+        font-size:20px;
+    }
+    .button{
+        padding:10px 25px 10px 25px;
+        font-size: 9px;
+    }
+    .divs-yidva{
+        margin-left:6%;
+        max-width:500px;
+    }
+    .america{
+        margin-left:10%;
+}
+    
+
+}
+@media(max-width:1384px){
+    #news{
+        margin:0 5% 0 5%;
+        max-width:60%;
+        margin-left:250px;
+    }
+    .fotonews{
+        width: 60%;
+    }
+    .newstext{
+        font-size:10px;
+        margin-left:130px;
+    }
+    .foto2{
+        margin-left:40%;
+        max-width:200px;
+    }
+    .komiqselo{
+        font-size:12px;
+    }
+    .button{
+        margin-left:200px;
+        
+        font-size: 9px;
+    }
+    .divs-yidva{
+        grid-gap:70px;
+    }
+}
+@media(max-width:1200px){
+    
+    .divs-yidva{
+        grid-template-columns: repeat(3,285px);
+        
+    
+    }
+}
+footer{
+    margin-top:33px;
+}
+/* @media(max-width:1550px){
+    .divs-yidva{
+        margin-left:5%;
+    }
+} */
+
+@media(min-width:1921px){
+    #news{
+        margin-left:18.3%;
+    }
+    .divs-yidva{
+        margin-left:13%;
+    }
+}
+@media(max-width:1692px){
+    .divs-yidva{
+        margin-left:7%;
+        
+    }
+    .newstext{
+        font-size:12px;
+        margin-left:128px;
+    }
+}
+@media(max-height:885px){
+    .foto2{
+        height:250px;
+        max-width: 170px;
+    }
+    .button{
+        padding:6px 17px;
+        margin-top:50px;
+    }
+}
+@media(max-height:778px){
+    .foto2{
+        height:200px;
+        max-width: 140px;
+    }
+    .button{
+        padding:6px 17px;
+        margin-top:30px;
+    }
+}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#test.html" class="w3-bar-item w3-button w3-wide">კომიქსელო</a>
+    <div class="w3-right w3-hide-small">
+      <a href="index.html" class="w3-bar-item w3-button">მთავარი</a>
+      <a href="chvenigundi.html" target="_blank" class="w3-bar-item w3-button">ჩვენი გუნდი</a>
+      <a href="contactus.html" target="_blank" class="w3-bar-item w3-button">კონტაქტი</a>
+    </div>
+  </div>
+</div>
+</nav>
+
+<section id="news">
+    <div class="newss">
+        <div class="foto">
+            <img src="spiderman.jpg" class="foto2">
+
+        </div>
+        <div class="fotonews">
+            <h6>წარმოუდგენელი ადამიანი ობობა - დიდების დრო</h6>
+            <p class="newstext">ადამიანი ობობას უახლესი კომიქსი  ქართულად მხოლოდ ჩვენთან <span class="komiqselo">კომიქსელოში</span></p>
+            <div class="button"><a href="testoboba.html" target="_blank" class="meti">მეტის ნახვა</a></div>
+        </div>
+
+    </div>
+</section>
+<section>
+<!-- <div class="divs">
+    <div class="divs-sale">
+        <p class="main2">ფასდაკლებები</p>
+    </div>
+    <div class="divs-cats">
+        <p class="main2">კატეგორიები</p>
+    </div>
+    <div class="divs-geo">
+        <p class="main2">ქართული კომიქსები</p>
+    </div>
+</div>--><hr> 
+<center><h5>ბესტ სელერები</h5></center><hr class="meore">
+    <div class="divs-yidva">
+
+        <div class="yidva america">
+            <a href="america.html" target="_blank" class="linki"><img src="america.png" width="160" height="230" class="imgyidva"></a>
+            <p class="yidvap">კაპიტანი ამერიკა</p>
+        </div>
+        <div class="yidva vefxi">
+            <a href="testvefxi.html" target="_blank" class="linki"><img src="vefxi1.jpg"  width="160" height="230" class="imgyidva"></a>
+            <p class="yidvap">ვეფხისტყაოსანი</p>
+        </div>
+        <div class="yidva hulk">
+            <a href="testhulk.html" target="_blank" class="linki"><img src="hulk1.jpg" width="160" height="230"  class="imgyidva"></a>
+            <p class="yidvap">ჰალკი</p>
+            
+        </div>
+        <div class="yidva deadpool">
+            <a href="testdeadpool.html" target="_blank" class="linki"><img src="deadpool1.jpg" width="160" height="230"  class="imgyidva"></a>
+            <p class="yidvap">დედპული</p>
+        </div>
+        <div class="yidva ironman">
+            <a href="testironman.html" target="_blank" class="linki"><img src="ironman1.jpg" width="160" height="230" class="imgyidva"></a>
+            <p class="yidvap">რკინის კაცი</p>
+        </div>
+    </div>
+</section>
+<center><footer>&copy; Copyright Luka Katchkatchishvili</footer></center>
+
+</body>
+</html>
